@@ -16,5 +16,5 @@
         $populacaoB = $populacaoB * (1 + $taxaCrescimentoB);
     };
 
-    echo "$anos"
+    echo "Irá demorar $anos anos"
 ?>
