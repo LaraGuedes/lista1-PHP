@@ -2,7 +2,7 @@
 
     // Atividade 4
 
-    $populacaoA = 8000;
+    $populacaoA = 80000;
     $taxaCrescimentoA = 0.03;
 
     $populacaoB = 200000;
@@ -10,10 +10,10 @@
 
     $anos = 0;
 
-    while ($populacaoA <= $populacaoB) {
+    while ($populacaoA < $populacaoB) {
         $anos = $anos + 1;
-        $populacaoA = $populacaoA * (1 + $taxaCrescimentoA);
-        $populacaoB = $populacaoB * (1 + $taxaCrescimentoB);
+        $populacaoA = $populacaoA + ($populacaoA * $taxaCrescimentoA);
+        $populacaoB = $populacaoB + ($populacaoB * $taxaCrescimentoB);
     };
 
     echo "Irá demorar $anos anos"
